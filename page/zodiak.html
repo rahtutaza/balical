@@ -1,0 +1,599 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title></title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/jquery.mobile-1.4.5.min.css" />
+<style type="text/css">
+
+body { font-family: Helvetica, san-serif; }
+H1 { 
+	color: black; 
+}
+a:link { 
+	color:purple; 
+}
+
+.main,
+.sidebar { 
+	display:block; 
+	width:100%;
+}
+
+@media all and (min-width: 36em){
+	.main { 
+		float: left;
+		width:60%; 
+	}
+	.sidebar { 
+		float: left; 
+		width:40%;
+	}
+}
+
+@media all and (min-width: 50em){
+	.main { 
+		width:70%;
+	}
+	.sidebar { 
+		width:30%; 
+	}
+
+	H1 { color: white; font-size:1.2em }
+}
+</style>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script src="../js/jquery.mobile-1.4.5.min.js"></script>  
+</head> 	
+<body>
+	<a name="atas">Pilih Zodiak Anda</a>
+	<div data-role="page" id="index" data-quicklinks="true">
+    <div data-role="header" data-theme="a" data-position="fixed">
+		<a href="" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-right ui-icon-back">Back</a>
+        <h1>Zodiak</h1>
+    </div>
+ <div>
+     <table bgcolor="#FFFFFF" border="0" cellpadding="10" cellspacing="0" align="center"> 
+     <tbody><tr valign="bottom">
+     <td style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:x-small" align="center"><a href="zodiak.html#capricorn" title="Capricorn (21 Desember - 19 Januari) " data-ajax="false" style="text-decoration:none; color:#000000"><img src="../css/images/icons-zodiak/capricorn.png" border="none"><br>Capricorn</a></td>
+     <td style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:x-small" align="center"><a href="#aquarius" title="Aquarius (20 Januari - 18 Februari)" data-ajax="false" style="text-decoration:none; color:#000000"><img src="../css/images/icons-zodiak/aquarius.png" border="none"><br>Aquarius</a></td>
+     <td style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:x-small" align="center"><a href="#pisces" title="Pisces (19 Februari - 20 Maret)" data-ajax="false" style="text-decoration:none; color:#000000"><img src="../css/images/icons-zodiak/pisces.png" border="none"><br>Pisces</a></td>
+     <td style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:x-small" align="center"><a href="#aries" title="Aries (21 Maret - 20 April)" data-ajax="false" style="text-decoration:none; color:#000000"><img src="../css/images/icons-zodiak/aries.png" border="none"><br>Aries</a></td>
+     </tr>
+     </tbody></table>
+     
+     <table bgcolor="#FFFFFF" border="0" cellpadding="10" cellspacing="0" align="center"> 
+     <tbody><tr valign="bottom">
+     <td style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:x-small" align="center"><a href="#taurus" title="Taurus (21 April - 20 Mei)" data-ajax="false" style="text-decoration:none; color:#000000"><img src="../css/images/icons-zodiak/taurus.png" border="none"><br>Taurus</a></td>
+     <td style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:x-small" align="center"><a href="#gemini" title="Gemini (21 Mei - 20 Juni)" data-ajax="false" style="text-decoration:none; color:#000000"><img src="../css/images/icons-zodiak/gemini.png" border="none"><br>Gemini</a></td>
+     <td style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:x-small" align="center"><a href="#cancer" title="Cancer (21 Juni - 20 Juli)" data-ajax="false" style="text-decoration:none; color:#000000"><img src="../css/images/icons-zodiak/cancer.png" border="none"><br>Cancer</a></td>
+     <td style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:x-small" align="center"><a href="#leo" title="Leo (21 Juli - 21 Agustus)" data-ajax="false" style="text-decoration:none; color:#000000"><img src="../css/images/icons-zodiak/leo.png" border="none"><br>Leo</a></td>
+     </tr>
+     </tbody></table>
+     
+     <table bgcolor="#FFFFFF" border="0" cellpadding="10" cellspacing="0" align="center"> 
+     <tbody><tr valign="bottom">
+     <td style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:x-small" align="center"><a href="#virgo" title="Virgo (22 Agustus - 22 September)" data-ajax="false" style="text-decoration:none; color:#000000"><img src="../css/images/icons-zodiak/virgo.png" border="none"><br>Virgo</a></td>
+     <td style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:x-small" align="center"><a href="#libra" title="Libra (23 September - 23 Oktober)" data-ajax="false" style="text-decoration:none; color:#000000"><img src="../css/images/icons-zodiak/libra.png" border="none"><br>Libra</a></td>
+     <td style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:x-small" align="center"><a href="#scorpio" title="Scorpio (24 Oktober - 22 Nopember)" data-ajax="false" style="text-decoration:none; color:#000000"><img src="../css/images/icons-zodiak/scorpio.png" border="none"><br>Scorpio</a></td>
+     <td style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:x-small" align="center"><a href="#sagitarius" title="Sagitarius (23 Nopember - 20 Desember)" data-ajax="false" style="text-decoration:none; color:#000000"><img src="../css/images/icons-zodiak/sagitarius.png" border="none"><br>Sagitarius</a></td>
+     </tr>
+     </tbody></table>
+	 </div>
+<br><br><br><br><br><br><br><br><br>
+<center>    
+<div style="text-align:center; max-width:80%; background-color:#EFEFEF">  
+<p><br>	<a name="capricorn"><b>Capricorn</a> <br>
+(21 Desember - 19 Januari)</b><br><br>
+
+Simbul: <br>
+Kambing<br><br>
+
+<b><i>Kesehatan: </i></b><br>
+Sewaktu anak-anak sampai berumur 7 tahun kesehatannya kurang baik, sering sakit-sakitan, 
+biasanya terkena pilek, batuk, perut kembung. Namun seiring dengan bertambahnya umur kesehatannya semakin membaik. 
+Oleh karena itu, kesehatannya perlu diperhatikan sampai mencapai umur dewasa. 
+Apabila masa sakit-sakitan telah dilewati maka selanjutnya akan tahan dengan berbagai 
+macam penyakit sehingga dapat mencapai umur panjang.
+<br><br>
+<b><i>Karakter: </i></b><br>
+Senang berpura-pura segan, namun sebenarnya ingin menonjol. Suka menyendiri, 
+kadang-kadang ragu-ragu dan curiga. Akan tetapi bila keputusannya sudah diambil pendiriannya kuat. 
+Senang dipuji sesuai dengan kecakapannya. Berani bertanggung jawab, ulet dan pandai dalam perhitungan untung rugi. 
+Cendrung kepada kekolotan dan suka pada tradisi. Hemat dan sedikit pelit, namum suka menolong orang yang perlu ditolong. 
+Ulet dalam bekerja. Kelemahannya, pemarah, mudah tersinggung, biasanya memikirkan kesulitan secara mendalam. 
+Sukar memaafkan orang yang telah ingkar janji.
+<br><br>
+<b><i>Pekerjaan: </i></b><br>
+Wartawan, pengarang, diplomat (politik), pemimpin, pendidik, pemain drama, pedagang. 
+Untuk wanita bekerja di rumah sakit, model, kantor dagang dan pemerintahan. 
+<br><br>
+<b><i>Jodoh: </i></b><br>
+Seyogyanya orang yang pandai memberi kegembiraan kepadanya antara lain orang yang berbintang Virgo, Taurus, dan Libra.
+<br><br>
+<b><i>Hari: </i></b><br>
+Sabtu<br><br>
+
+<b><i>Warna: </i></b><br>
+Hijau tua<br><br>
+
+<b><i>Batu: </i></b><br>
+Batu Agaat, Onyx putih, dan Biduri bulan.<br><br>
+
+<b><i>Angka: </i></b><br>
+8 atau angka yang digabungkan menjadi 8, misalnya 35, 53, 71, dst.<br><br>
+</p>
+</div>
+<br><br><br>
+<div style="text-align:center; max-width:80%; background-color:#EFEFEF">  
+<p><br><a name="aquarius"><b>Aquarius</a><br>
+ (20 Januari - 18 Februari)</b><br><br>
+
+<b><i>Simbul: </i></b><br>
+Penuang Air<br><br>
+
+<b><i>Kesehatan: </i></b><br>
+Mudah terserang penyakit tulang, saraf, peredaran darah kurang lancar, sakit kepala, sakit otak. 
+Sebaiknya jangan terlalu banyak bekerja dengan otak. Atur keseimbangan antara bekerja dan beristirahat.
+<br><br>
+<b><i>Karakter: </i></b><br>
+Berbudi luhur, selalu memperjuangkan keadilan, kemajuan, dan kesejahteraan. 
+Bersedia berkorban untuk kebahagiaan orang lain. Ada yang berwatak keras kepala terkadang suka melamun. 
+Berbakat dalam menciptakan karya-karya baru dalam hal musik. 
+Cerdas, namun karena suka melamun kadang-kadang menjadi tidak menentu. 
+Keseimbangan dalam jiwanya amat tinggi banyak orang yang meminta nasehat kepadanya. 
+Manis peramah, suka pada kehiudupan yang lurus. Hemat, tidak tamak terhadap kebendaan. 
+Wanita Aquarius tidak segan, berani bertindak melebihi kaum pria. Kelemahannya, suka menunda-nunda pekerjaan, 
+seringkali sombong, gila hormat, bicaranya seringkali berlebihan sehingga seringkali menimnulkan kedustaan dalam membanggakan diri. 
+Kadang kala kehilangan kepercayaan diri. Bila hendak mencapai maksudnya, kadang sampai hati melanggar aturan.
+<br><br>
+<b><i>Pekerjaan: </i></b><br>
+Umumnya mempunyai kepandaian yang luar biasa. Karena kepandaiannya di banyak bidang, 
+banyak pekerjaan yang disukai mencapai keberhasilan. Pekerjaan pilihan bagi mereka adalah dokter jiwa, 
+pengarang, wartawan, seni musik, dan sebagainya. 
+<br><br>
+<b><i>Jodoh: </i></b><br>
+Dapat mencintai dan bersedia hidup di luar pernikahan. namun cintanya murni adn tidak mengharapkan akan keuntungan. 
+Suka menikah dengan orang yang sudah dikenal lama. Sahabat atau jodohnya yang cocok adalah Gemini, Libra, dan Aquarius.
+<br><br>
+<b><i>Hari: </i></b><br>
+Sabtu<br><br>
+
+<b><i>Warna: </i></b><br>
+Hijau Muda<br><br>
+
+<b><i>Batu: </i></b><br>
+Kecubung kasihan dan Nilam<br><br>
+
+<b><i>Angka: </i></b><br>
+8 terutama 48 dan 84<br><br>
+</p>
+</div>
+<br><br><br>
+<div style="text-align:center; max-width:80%; background-color:#EFEFEF">  
+<p><br><a name="pisces"><b>Pisces</a><br>
+(19 Februari - 20 Maret)</b><br><br>
+
+<b><i>Simbul: </i></b><br>
+Ikan<br><br>
+
+<b><i>Kesehatan: </i></b><br>
+Pada masa kanak-kanak kesehatannya kurang baik, namun seiring dengan bertambahnya umur kesehatannya membaik. 
+Mudah terserang penyakit paru dan penyakit kaki. Disarankan jangan menggunakan obat-obatan yang dapat mematikan rasa 
+dan jauhkan dari alkohol dan narkoba. Pada umur 14-21 tahun harus diperhatikan dan dijaga paru-parunya.
+<br><br>
+<b><i>Karakter: </i></b><br>
+Orang Pisces umumnya mempunyai watak campuran baik dan buruk kelemahannya bersama-sama dengan kekuatannya. 
+Mempunyai sifat perwira. Bila terlepas dari ketetapan hatinya, sering timbul kebimbangan. 
+Mudah terpengaruh oleh lingkungan dan pergaulan. Suka dengan pemandangan alam, suka merantau. 
+Pandai berbicara dan seringkali mengalahkan lawan bicaranya dalam berdebat. Suka menolong orang yang menderita, 
+kadang kala dengan uang yang berlebihan, sehingga sering menimbulkan penyesalan kemudian. 
+Pemahaman keagamannya amat mendalam sehingga dapat menjadi pemimpin agama atau organisasi keagamaan. 
+Kelemahannya, pemarah, pemalu, pelupa, dan kadang keras kepala.
+<br><br>
+<b><i>Pekerjaan: </i></b><br>
+Hampir semua pekerjaan dapat dikerjakan dengan baik. Terkadang karena wataknya yang bercampur antara baik dan kurang baik, 
+maka pekerjaan yang dikerjakan sering tidak berhasil dengan baik. Mudah memahami ilmu perbintangan (astrolomi) dan kedokteran, 
+seni, drama, penyelidikan, pertambangan, pelayaran, dan kebatinan. Antara umur 21 - 28 tahun bekerja keras untuk menghidupan, 
+dan pada umur 40 - 50 tahun telah memetik hasil jerih payahnya. 
+Wanita Pisces cocok bekerja sebagai juru rawat, pemimpin perusahaan, dan pekerjaan sosial.
+<br><br>
+<b><i>Jodoh: </i></b><br>
+Dorongan hawa nafsu amat keras sehingga kadang-kadang pernikahannya bukan karena mencari teman hidup tetepi karena rasa simpati. 
+Karena wataknya yang tidak tenang, maka ia menghendaki agar perkawinannya tidak amat mengikatnya. Jodonya Cancer atau Scorpio.
+<br><br>
+<b><i>Hari: </i></b><br>
+Kamis<br><br>
+
+<b><i>Warna: </i></b><br>
+Abu-abu<br><br>
+
+<b><i>Batu: </i></b><br>
+Safier<br><br>
+
+<b><i>Angka: </i></b><br>
+3, 6, dan 9<br><br>
+</p>
+</div>
+<br><br><br>
+<div style="text-align:center; max-width:80%; background-color:#EFEFEF">  
+<p><br><a name="aries"><b>Aries</a><br>
+ (21 Maret - 20 April)</b><br><br>
+
+<b><i>Simbul: </i></b><br>
+Domba<br><br>
+
+<b><i>Kesehatan: </i></b><br>
+Kadang-kadang dapat terserang penyakit kepala yang ada hubungannya dengan penyakit mata dan hidung. 
+Pikirannya sangat kuat, dan karenanya ia dapat menyembuhkan penyakitnya. Ia dapat pula diserang oleh penyakit yang hebat,
+namun dengan cara yang aneh dapat sembuh sendiri.
+<br><br>
+<b><i>Karakter: </i></b><br>
+Ulet, pekerja keras, tabah, tak mudah putus asa, suka berkorban, semangatnya tinggi, dan tidak suka bermalas-malasan. 
+Sanggup menghadapi segala rintangan. Berhati besar, tidak suka berbohong. Gemar pada kesenian dan keindahan. 
+Berbakat untuk memiliki kekuatan gaib. Kelemahannya, suka berubah pikiran hingga sering salah perhitungan, 
+selalu tidak puas, mudah tersinggung, pemarah, suka menyerang (agresif).
+<br><br>
+<b><i>Pekerjaan: </i></b><br>
+Suka merantau dan sering berubah profesi, cocok menjadi wartawan harian, pengarang, penyair, 
+guru, pemimpin masyarakat, Pandai mencari uang, tetapi tidak dapat menyimpannya. 
+Kalau sudah terdesak oleh keadaan, ia menjadi pelit.
+<br><br>
+<b><i>Jodoh: </i></b><br>
+Sagitarius, sama-sama Aries tetapi masing-masing harus dapat mengendalikan diri untuk kebahagiaan bersama.
+<br><br>
+<b><i>Hari: </i></b><br>
+Selasa<br><br>
+
+<b><i>Warna: </i></b><br>
+Merah Jingga<br><br>
+
+<b><i>Batu: </i></b><br>
+Intan atau Berlian<br><br>
+
+<b><i>Angka: </i></b><br>
+3<br><br>
+</p>
+</div>
+<br><br><br>
+<div style="text-align:center; max-width:80%; background-color:#EFEFEF"> 
+<p><br><a name="taurus"><b>Taurus</a><br> 
+ (21 April - 20 Mei)</b><br> <br> 
+
+<b><i>Simbul: </i></b><br> 
+Sapi Jantan<br> <br> 
+
+<b><i>Kesehatan: </i></b><br> 
+Mudah terserang penyakit tenggorokan dan penyakit kelamin. Nafsu birahinya tinggi, 
+dan karena itu perlu berhati-hati dengan penyakit kelamin.
+<br> <br> 
+<b><i>Karakter: </i></b><br> 
+Umumnya sangat setia kepada sahabat-sahabatnya dan sanggup membela secara gigih, 
+berani dan bertanggung jawab. Sabar, namun bila marah membahayakan. 
+Tidak suka pada hal yang kecil dan sepele. Suka membangun sesuatu yang diharapkan akan kekal. 
+Perasaannya halus sehingga dapat merasakan kesulitan orang lain dan selalu ingin menolong. 
+Firasatnya tajam dan cepat mengetahui sifat orang yang dihadapinya. Pada umumnya bekerja lamban, 
+tetapi kalau sudah mau bekerja, ia akan bekerja keras dan kadang-kadang sampai di luar kekuatannya. 
+Kelemahannya, perlente, suka berpakaian bagus sampai hari tua. Cepat menarik dan ditarik oleh lawan jenis. 
+Kalau marah sering merusak.
+<br> <br> 
+<b><i>Pekerjaan: </i></b><br> 
+Arsitek, bankir, petani, pengarang, penyanyi, pemimpin pergerakan, dan ahli berpiadto. 
+Suka mengejar harta dan sukses. Tidak kurang sandang pangan.
+<br> <br> 
+<b><i>Jodoh: </i></b><br> 
+Dalam perkawinan kurang beruntung karena sering berselisih paham terutama pada tahun-tahun permulaan pernikahan. 
+Kalau dapat bertahan, ia akan menganggap lawan hidupnya sebagai sauadra. Jodohnya bintang apa saja kecuali Aries.
+<br> <br> 
+<b><i>Hari: </i></b><br> 
+Jumat<br> <br> 
+
+<b><i>Warna: </i></b><br> 
+Biru Tua<br> <br> 
+
+<b><i>Batu: </i></b><br> 
+Turkoois, Pirus atau Zambrut.<br> <br> 
+
+<b><i>Angka: </i></b><br> 
+3, 6, dan 9<br> <br> 
+</p>
+</div>
+<br><br><br>
+<div style="text-align:center; max-width:80%; background-color:#EFEFEF"> 
+<p><br><a name="gemini"><b>Gemini</a><br> 
+(21 Mei - 20 Juni)</b><br><br>
+
+<b><i>Simbul: </i></b><br>
+Orang Kembar<br><br>
+
+<b><i>Kesehatan: </i></b><br>
+Mudah terserang penyakit saraf, sering sakit kepala sampai tidak bisa tidur. 
+Mudah lelah baik badan maupun jiwa. Sedapat mungkin jangan menggunakan pengobatan listrik. 
+Paad umur 42 sebaiknya berhati-hati karena mudah terserang berbagai penyakit. 
+Waktu kanak-kanak mudah cacingan. Harus banyak istirahat, jangan terlalu banyak bekerja dengan otak. 
+Perlu latihan pernafasan untuk mencegah penyakit paru-paru. Harus diperlakukan dengan sabar, 
+tidak boleh dimaki-maki dengan kata-kata kasar karena perasaanya halus. 
+Antara umur 14 - 20tahun pertumbuhannya baik asal kesehatannya dijaga.<br><br>
+
+<b><i>Karakter: </i></b><br>
+Cerdas, pirasatnya tajam, berbakat menjadi orang pintar. Sopan santun dan disukai oleh setiap orang. 
+Hatinya terbuka, suka menolong orang lain sekalipun dengan meminjam, suka pada pelajaran tinggi, 
+dan pandai berbicara. Kelemahannya, Susah dapat menyimpan uang karena suka menghabiskan uangnya untuk menolong orang lain. 
+Suka memerintah, tetapi akhirnya mundur teratur. Pemberani, tetapi pada lain waktu penakut, dan mudah tersinggung.<br><br>
+
+<b><i>Pekerjaan: </i></b><br>
+Menjadi ulama, pemimpin peribadatan, pendeta, guru, pengacara, dokter, dan wartawan. 
+Menjadi wartawan lebih cocok dibanding pendeta dan guru yang bersifat monoton. 
+Cocok sebagai pengacara karena pandai beradu argumentasi. Tidak berbakat sebagai pedagang.<br><br>
+
+<b><i>Jodoh: </i></b><br>
+Karena hatinya sering tidak menentu sehingga dalam perjodohan kurang menemukan kebahagiaan. 
+Mungkin akan menikah lebih dari sekali. Mempunyai keinginan untuk hidup bahagia dalam berkeluarga, 
+namun kenyataannya sering gagal. Wanita Gemini sering meributkan hal-hal yang kecil dalam berumah tangga, 
+tetapi menyukai keindahan dan pandai mengatur keselarasan. Jodohnya adalah Libra yang sabar, 
+Aquarius yang pengertian, atau Gemini sendiri karena mempunyai kesamaan kepribadian.<br><br>
+
+<b><i>Hari: </i></b><br>
+Rabu<br><br>
+
+<b><i>Warna: </i></b><br>
+Kuning<br><br>
+
+<b><i>Batu: </i></b><br>
+Batu aquamarin atau batu laut.<br><br>
+
+<b><i>Angka: </i></b><br>
+5 atau berjumlah 5<br><br>
+</p>
+</div>
+<br><br><br>
+<div style="text-align:center; max-width:80%; background-color:#EFEFEF"> 
+<p><br><a name="cancer"><b>Cancer</a><br>
+(21 Juni - 20 Juli)</b><br><br>
+
+<b><i>Simbul:</i></b><br> 
+Kepiting<br><br>
+
+<b><i>Kesehatan: </i></b><br>
+Dapat terserang gangguan pencernaan. Oleh karena itu hindari makanan pedas atau makanan yang dingin (es).<br><br>
+
+<b><i>Karakter: </i></b><br>
+Gemar kepada kekuatan gaib, kebatinan, gerakannya agak lambat, pandai bergaul, 
+dan sangat teliti. Kelemahannya, suka berhayal, pemalu, hatinya lembek, dan mudah tersinggung.<br><br>
+
+<b><i>Pekerjaan: </i></b><br>
+Pengurus restoran, hotel atau toko. Pemimpin, pemain sandiwara, ahli sejarah, 
+museum, pengarang dan ahli berpidato. Kalau dapat mengatasi sifat pemalunya, 
+mungkin akan menduduki tempat yang terkemuka di masyarakat. 
+Sukses dalam hidupnya bila sudah mencapai usia agak lanjut. Pandai mencari dan menyimpan uang.<br><br>
+
+<b><i>Jodoh: </i></b><br>
+Biasanya pernikahannya terlambat bahkan kadang tidak mau menikah. 
+Untuk mendapat keturunan yang kuat sebaiknya jodohnya Scorpio atau Pisces.<br><br>
+
+<b><i>Hari: </i></b><br>
+Senin<br><br>
+
+<b><i>Warna: </i></b><br>
+Ungu<br><br>
+
+<b><i>Batu: </i></b><br>
+Mutiara atau Akik<br><br>
+
+<b><i>Angka: </i></b><br>
+9<br><br>
+</p>
+</div>
+<br><br><br>
+<div style="text-align:center; max-width:80%; background-color:#EFEFEF"> 
+<p><br><a name="leo"><b>Leo</a><br>
+(21 Juli - 21 Agustus)</b><br><br>
+
+<b><i>Simbul: </i></b><br>
+Singa Jantan<br><br>
+
+<b><i>Kesehatan: </i></b><br>
+Peka terhadap penyakit jantung, paru-paru, dan kurang darah. Bila sakit perlu banyak hiburan.<br><br>
+
+<b><i>Karakter: </i></b><br>
+Angker dan agung, tegap perawakannya, pundaknya lebar, langkah kakinya kuat, mukanya berseri-seri, 
+matanya bersinar, postur seluruh tubuhnya serba berimbang. Jujur dan setia, ramah-tamah, suka kepada kemewahan. 
+Suka berkeja dengan sungguh-sungguh dan tidak tanggung-tanggung, mau menerima kecaman yang berdasar kebenaran, 
+dan suka memaafkan. Kelemahannya, tidak mau di bawah perintah orang lain, kalau mencintai sering membuta tuli. 
+Bilamana kurang pendidikan, sikap agungnya berubah menjai sombong dan dusta. Rakus terhadap makanan, 
+mudah tertarik kepada lawan jenis, suka memandang remeh orang lain. Wanita Leo lebih boros dari pria.<br><br>
+
+<b><i>Pekerjaan: </i></b><br>
+Pekerjaan yang cocok adalah berwiraswasta atau pemimpin perusahaan.<br><br>
+
+<b><i>Jodoh: </i></b><br>
+Sagitarius, Aries, Libra, dan Gemini.<br><br>
+
+<b><i>Hari: </i></b><br>
+Minggu<br><br>
+
+<b><i>Warna: </i></b><br>
+Kuning dan Orange<br><br>
+
+<b><i>Batu: </i></b><br>
+Berlian, Ruby (merah bintang), dan mirah.<br><br>
+
+<b><i>Angka: </i></b><br>
+1<br><br>
+</p>
+</div>
+<br><br><br>
+<div style="text-align:center; max-width:80%; background-color:#EFEFEF"> 
+<p><br><a name="virgo"><b>Virgo</a><br>
+(22 Agustus - 22 September)</b><br><br>
+
+<b><i>Simbul: </i></b><br>
+Gadis<br><br>
+
+<b><i>Kesehatan: </i></b><br>
+Mudah terserang penyakit perut, limpa, cacing pita, kolera, usus buntu, disentri, 
+dan sesak nafas. Namun mempunyai keajaiban untuk menyembuhkan diri sendiri.<br><br>
+
+<b><i>Karakter: </i></b><br>
+Otaknya cemerlang, mudah memahami pelajaran, setia pada keluarga, sopan santun, 
+suka berpakaian rapi dan bagus. Suka mengalah, tidak mudah memutuskan hubungan. 
+Riang gembira, mukanya berseri-seri, awet muda, dan suka pada anak-anak. 
+Kelemahannya, bilamana kurang pendidikan dapat berbuat sewenang-wenang, sombong akan kekayaan dan kedudukanya. 
+Suka merusak barang-barang bila marah. Tidak mau mengaku salah, suka berhutang, tidak dapat dipercaya. 
+Tetapi kalau berpendidikan baik, orang Virgo paling mudah dipercaya.<br><br>
+
+<b><i>Pekerjaan: </i></b><br>
+Ahli kimia, kesusastraan, musik, pandai berpidato. Berbakat dalam ilmu kebatinan. 
+Dapat bekerja secara cepat, cocok mengurus rumah tangga, dan merawat orang sakit dan anak-anak.<br><br>
+
+<b><i>Jodoh: </i></b><br>
+Libra, Sagitarius, dan Virgo sendiri.<br><br>
+
+<b><i>Hari: </i></b><br>
+Rabu<br><br>
+
+<b><i>Warna: </i></b><br>
+Kuning<br><br>
+
+<b><i>Batu: </i></b><br>
+Jaspi (Badar hijau)<br><br>
+
+<b><i>Angka: </i></b><br>
+6<br><br>
+</p>
+</div>
+<br><br><br>
+<div style="text-align:center; max-width:80%; background-color:#EFEFEF"> 
+<p><br><a name="libra"><b>Libra</a><br>
+(23 September - 23 Oktober)</b><br><br>
+
+<b><i>Simbul: </i></b><br>
+Timbangan<br><br>
+
+<b><i>Kesehatan: </i></b><br>
+Dapat terserang penyakit ginjal, kulit, maag, ekseem, dan bagi wanita bermasalah dengan datang bulan (tidak tepat), 
+Waktu kecil kebanyakan kurus, namun bila sudah besar dapat menjadi gemuk.<br><br>
+
+<b><i>Karakter: </i></b><br>
+Parasnya bundar, namun ada pula yang lonjong, suaranya nyaring, sorot matanya bagus terutama kaum wanitanya. 
+Ada dua macam orang Libra, Pertama riang gembira, namun tiba-tiba sedih, 
+dan yang kedua selalu sedih namun mendadak menjai riang gembira. Suka kepada kemewahan, suka damai. 
+Baik pria maupun wanita, Libra suka kepada keserasian dan senantiasa menjauhi permusuhan. 
+Budi bahasanya manis, senyumnya menarik. Firasatnya tajam, seringkali dugaannya tepat. 
+Kelamahannya, pelit saking hematnya, pemalu, tidak mudah melupakan kesalahan orang kepadanya. 
+Sukar untuk dicintai karena perkataannya suka menyinggung perasaan orang lain dan ia tidak peduli dicintai atau tidak. 
+Kalau niatnya dirintangi ia bisa mengamuk dan menuntut balas. Malas bekerja seniri. Nafsu birahinya tinggi. Tidak suka dicela, dan tidak sabar.<br><br>
+
+<b><i>Pekerjaan: </i></b><br>
+Dagang, wartawan, penerbit buku, dan guru. Dapat juga menjadi pendeta, penerbang, dan insinyur mesin. 
+Mudah memahami tenaga gaib, spekulasi terkadang dapat berhasil. Tidak boleh mengharapkan warisan.<br><br>
+
+<b><i>Jodoh: </i></b><br>
+Capricorn, Aries, dan Libra sendiri.<br><br>
+
+<b><i>Hari: </i></b><br>
+Jumat<br><br>
+
+<b><i>Warna: </i></b><br>
+Biru Muda<br><br>
+
+<b><i>Batu: </i></b><br>
+Opal, berlian, dan mirah warna kuning<br><br>
+
+<b><i>Angka: </i></b><br>
+2 dan 9<br><br>
+</p>
+</div>
+<br><br><br>
+<div style="text-align:center; max-width:80%; background-color:#EFEFEF"> 
+<p><br><a name="scorpio"><b>Scorpio</a><br>
+(24 Oktober - 22 Nopember)</b><br><br>
+
+<b><i>Simbul: </i></b><br>
+Kalajengking<br><br>
+
+<b><i>Kesehatan: </i></b><br>
+Mudah terserang penyakit kelamin, jantung, sakit pinggang, batu ginjal, hidung (polip). 
+Wanitanya dapat terserang keputihan dan bagian peranakannya.<br><br>
+
+<b><i>Karakter: </i></b><br>
+Pejuang yang jujur hingga berani memberontak, tidak suka diperintah orang lain, 
+terlalu pegang pada janji, berbakat besar tentang ilmu gaib, pandangannya luas, 
+mudah belajar bahasa asing. Suka berpakaian bagus, rumah baik, dan rapi. 
+Pandai menyimpan rahasia dan karenanya mudah dipercaya. 
+Tajam dan berbakat pada ilmu watak manusia. Kelemahannya, 
+kalau sedang sedih tidak banyak bicara dan perkataanya sering menyakiti hati orang lain. 
+Suka mengumbar nafsu, dapat berbuat kejam, senang dipuji, kalau keinginannya tidak tercapai dapat berbuat nekat. 
+Cemburu, tidak suka dikecam dan dibantah.<br><br>
+
+<b><i>Pekerjaan: </i></b><br>
+Dokter terutama ahli bedah, sukses dalam militer dan keagamaan, reporter, detektif. 
+Untuk wanita, cocok dengan pekerjaan yang memerlukan ketabahan, keberanian, dan keadilan.<br><br>
+
+<b><i>Jodoh: </i></b><br>
+Libra atau Virgo<br><br>
+
+<b><i>Hari: </i></b><br>
+Selasa<br><br>
+
+<b><i>Warna: </i></b><br>
+Merah<br><br>
+
+<b><i>Batu: </i></b><br>
+Ratna Cempaka, Topas dan Opal<br><br>
+
+<b><i>Angka: </i></b><br>
+8<br><br>
+</p>
+</div>
+<br><br><br>
+<div style="text-align:center; max-width:80%; background-color:#EFEFEF"> 
+<p><br><a name="sagitarius"><b>Sagitarius</a><br>
+(23 Nopember - 20 Desember)</b><br><br>
+
+<b><i>Simbul: </i></b><br>
+Pemanah<br><br>
+
+<b><i>Kesehatan: </i></b><br>
+Mudah terserang penyakit rematik, paru-paru, patah tulang kaki, asma, batuk, dan bronchitis.<br><br>
+
+<b><i>Karakter: </i></b><br>
+Berbudi luhur, senantiasa memikirkan cara-cara menaikkan martabat manusia dan kemakmuran masyarakat. 
+Budi bahasanya manis, peramah, dan oleh karenanya banyak disukai orang. Berani berkorban untuk orang lain. 
+Sanggup bekerja keras, berhati-hati, dan disiplin sehingga sering mendapatkan keudukan tinggi di masyarakat. 
+Orang sagitarius mungkin menyeniri untuk menempuh hidup suci. Wanita sagitarius pandai mengatur rumah tangga, 
+dicintai oleh keluarganya karena adil, namun keras. Kelemahannya, bangga akan kepandaiannya sendiri, 
+suka mengejek dengan cara terbungkus yang menginggung orang lain. Orang sagitarius yang kurang pendidikan, 
+suka marah, merusak, mau menang sendiri, berbuat nekat. Dalam memberikan pertolongan kepada orang sering melewati batas, 
+dan sering kebaikan, kejujuran dan kedermawanannya disia-siakan orang.<br><br>
+
+<b><i>Pekerjaan: </i></b><br>
+di bidang keagamaan, diplomatik, penerbit buku, percetakan, wartawan, pengacara, ahli olah raga, dan seniman. 
+Dalam hidupnya jarang sampai kekurangan uang.<br><br>
+
+<b><i>Jodoh: </i></b><br>
+Aquarius, Libra, dan Sagitarius sendiri.<br><br>
+
+<b><i>Hari: </i></b><br>
+Kamis<br><br>
+
+<b><i>Warna: </i></b><br>
+Merah. Hijau, dan Kuning emas.<br><br>
+
+<b><i>Batu: </i></b><br>
+Intan dan Kemala<br><br>
+
+<b><i>Angka: </i></b><br>
+4<br><br>
+</p>
+</div>
+
+</center>
+
+<div data-role="footer" data-theme="a" data-position="fixed">
+	<a href="#atas" class="ui-btn ui-btn-right ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-right ui-icon-arrow-u" data-ajax="false">Up</a>
+    	<h1>Copyright &copy; By: Rahtut Aza</h1>
+</div>
+    	
+</body>
+</html>

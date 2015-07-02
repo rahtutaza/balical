@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title></title> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" href="css/jw-jqm-cal.css" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>  
+<script type="text/javascript" src="js/jw-jqm-cal.js"></script>
+<script src="js/script.js"></script> 
+<!--style type="text/css">
+div.fixed1 {
+    position: absolute;
+	top: 80px;
+    bottom: 5;
+    right: 5;
+    width: 300px;
+	z-index: 10;
+	opacity: 0.2;
+	background-color: #FFA8A8;
+}
+</style>
+<!-->
+</head> 
+
+<body>
+<div data-role="page" id="index" data-quicklinks="true">
+    <div data-role="header" data-position="fixed">
+    	<h1>Bali Calendar</h1>
+    	<a href="menu.html" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-left ui-icon-grid">Menu</a>
+		<a href="about.html" class="ui-btn ui-btn-right ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-left ui-icon-user">About</a>
+    </div>
+	<!--div class="fixed1" style="max-width:14%">
+	<br><br><br><br><br><br><br><br><br><br><br>
+	</div-->
+	
+
+    <div role="main" class="ui-content jqm-content jqm-fullwidth">
+    	<div id="calendar"></div>
+    </div>
+    
+  <!-- tambahan dari saya 
+  <center>
+  <div style="min-width:60%;max-width:20%;color:#000032"><br>
+	<img src="css/images/icons-png/alert-black.png"><b> Peristiwa Penting</b></div>  
+    <div role="main" style="min-width:50%;max-width:60%;color:#FF0003">
+		<div data-role="content" data-theme="c">
+			<div id="isiPeristiwa"></div>
+		</div>
+	</div>
+  </center>
+ /-->
+ <!-- FOOTER /-->   
+    <div data-role="footer" data-position="fixed">
+    	<h1>Copyright &copy; By: Rahtut Aza</h1>
+    </div>
+
+</div>
+</body>
+
+ <!-- POP-UP Event /--> 
+<div id="dialog" data-rel="dialog">
+	<header data-role="header" data-theme="a">
+	<h1>Event</h1>
+	</header>
+	<div data-role="content">
+		<div data-role="content" data-theme="c">
+			<div id="isiPeristiwa"></div>
+		</div>
+	</div>
+</div> 
+</html>
